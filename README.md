@@ -1,3 +1,9 @@
+## Running for development:
+
+    - Front-end: $ npm run server (in root dir)
+    - Back-end: $ npm run client (in root dir)
+    - Both at the same time: $ npm run dev (in root dir)
+
 ## I. Front-end Explanation:
 
     1. Packages Used:
@@ -33,12 +39,17 @@
             - dotenv:
                 +, Link: https://www.npmjs.com/package/dotenv
                 +, package for environment variable
+            - colors (npm install --save colors):
+                +, Used to colorize our console error message in backend
 
 
         b. Package Installation:
             - $ npm install --save express
             - $ npm install -D nodemon concurrently
             - $ npm install --save dotenv
+            - $ npm install --save mongoose
+            - $ npm install --save colors
+            - $ npm install --save bcryptjs
 
     2. Other Backend Notes:
 
@@ -89,3 +100,21 @@
         - See front-end and back-end notes
         - Video from 12 - 15
         - Done Section 3
+
+    5th Commit:
+        - Setting up MongoDB:
+            +, See database connection script in ./server/config/db.js
+            +, See .env file for connection string
+        - Adding colors to console:
+            +, Usage example in ./server/server.js under app.listen() in console.log()
+        - Modeling data:
+            +, See files in ./server/models folder
+        - Implement Data Seeder:
+            +, What is data seeder ? Importing or destroying all dummy data in .server/data/products.js
+            and ./server/data/users.js to MongoDB
+            +, See ./server/seeder.js
+            +, See package.json for script configuration
+            +, $ npm run data:import
+                > importing all data to database
+            +, $ npm run data:destroy
+                > destroying all data in database
