@@ -100,6 +100,7 @@
         - See front-end and back-end notes
         - Video from 12 - 15
         - Done Section 3
+        (Wrong Commit title, but still applicable)
 
     5th Commit:
         - Setting up MongoDB:
