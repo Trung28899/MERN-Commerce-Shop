@@ -176,3 +176,14 @@
         - Setting up Redux store: (should follow exact commands,
             these are basic setup)
         - See ./client/store.js and setup in ./client/index.js
+
+    9th Commit:
+        - Setting up redux constant and actions
+        - See the actions following this order:
+            ./client/src/constants/productConstants.js
+            ./client/src/reducers/productReducers.js
+            ./client/src/actions/productActions.js
+
+        - The action in productActions is not currently
+            fire off yet, we just set it up in this commit
+            > See next commit for how to fire it off
