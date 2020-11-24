@@ -131,3 +131,14 @@
         - Creating routes to send valid data back to front-end
         - Fetching data from database (in front-end)
         - See ./server/routes/productRoutes.js
+
+    7th Commit
+        - Custom error handling:
+            +, For not found route
+            +, For invalid id in route /api/products/:id
+        - See ./server/middleware/errorMiddleware.js
+        - The functions are called in ./server/server.js
+        - Expected output:
+            +, Invalid route, should get back error json data
+            +, /api/products/:id with id is invalid value,
+                should also get back error json data
