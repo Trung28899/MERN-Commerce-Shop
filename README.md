@@ -20,11 +20,19 @@
                 +, Guide: go to (), search for font-awesome
                     > Copy the first Link Tag
                     > Copy it into ./client/public/index.html
+            - Redux, Redux-thunk:
+                +, Redux: allow application level's state
+                +, Redux-thunk: allow redux to make async requests
+            - redux-devtools-extension:
+                +, Allow us to access redux dev tool on the browser
+                +, Without this, the redux dev tool won't recognize
 
         b. Packages Installation:
             - $ npm install --save react-bootstrap
             - $ npm install --save react-router-dom react-router-bootstrap
             - $ npm install --save axios
+            - $ npm install --save redux react-redux redux-thunk
+            - $ npm install --save redux-devtools-extension
 
 ## II. Back-end Explanation:
 
@@ -84,6 +92,27 @@
         d. DELETE:
             - DELETE request is used for deleting data
 
+    3. Redux Pattern:
+        - Redux is a package that provide application state to work with
+        - Contains:
+            +, Reducer: having the central state, manipulate state and
+                passing state down to Components
+            +, Actions: object that represent the intention or command to change
+                a piece of state in reducer
+            +, Action Creator: function that will dispatch or fire off the
+                Actions
+
+        - Example:
+            > Action Creator make request to backend, get back information
+            > Action Creator dispatch info to Actions
+            > Action give command to Reducer with an attached payload
+            (contain the information fetched from backend)
+            > Reducer will change state
+            > state then will be passed down to any Component
+            that need it
+
+        https://drive.google.com/file/d/1Wpzv2-e3ilt1QwTfG9fb3yxwn0wi2YtG/view?usp=sharing
+
 ## IV. Commit Notes:
 
     2nd Commit:
@@ -142,3 +171,8 @@
             +, Invalid route, should get back error json data
             +, /api/products/:id with id is invalid value,
                 should also get back error json data
+
+    8th Commit:
+        - Setting up Redux store: (should follow exact commands,
+            these are basic setup)
+        - See ./client/store.js and setup in ./client/index.js
