@@ -41,6 +41,12 @@
                 +, package for environment variable
             - colors (npm install --save colors):
                 +, Used to colorize our console error message in backend
+            - Express Async Handler:
+                +, This is a middleware to handle exceptions inside of
+                async express routes and passing them to your express error
+                handlers
+                +, Link:
+                https://www.npmjs.com/package/express-async-handler
 
 
         b. Package Installation:
@@ -50,6 +56,7 @@
             - $ npm install --save mongoose
             - $ npm install --save colors
             - $ npm install --save bcryptjs
+            - $ npm install --save express-async-handler
 
     2. Other Backend Notes:
 
@@ -119,3 +126,8 @@
                 > importing all data to database
             +, $ npm run data:destroy
                 > destroying all data in database
+
+    6th Commit:
+        - Creating routes to send valid data back to front-end
+        - Fetching data from database (in front-end)
+        - See ./server/routes/productRoutes.js
