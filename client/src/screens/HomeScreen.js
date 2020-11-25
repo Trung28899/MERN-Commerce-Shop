@@ -1,26 +1,14 @@
 import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Row, Col } from "react-bootstrap";
 import Product from "../components/Product";
-
-/*
-  Redux action that will be fire off
-*/
+import Message from "../components/Message";
+import Loader from "../components/Loader";
 import { listProducts } from "../actions/productActions";
 
-/*
-  useDispatch() is used to dispatch (or call) a Redux action to Reducer
-  useSelector() is used to select a part of the application state
-*/
-import { useDispatch, useSelector } from "react-redux";
-
 const HomeScreen = () => {
-  /*
-    Dispatching an action to manipulate state in reducer
-  */
   const dispatch = useDispatch();
-  /*
-    accessing the 'productList' part of the state in redux
-  */
+
   const productList = useSelector((state) => state.productList);
   const { loading, error, products } = productList;
 
@@ -29,12 +17,12 @@ const HomeScreen = () => {
   }, [dispatch]);
 
   return (
-    <div>
+    <>
       <h1>Latest Products</h1>
       {loading ? (
-        <h2>Loading...</h2>
+        <Loader />
       ) : error ? (
-        <h3>{error}</h3>
+        <Message variant="danger">{error}</Message>
       ) : (
         <Row>
           {products.map((product) => (
@@ -44,7 +32,7 @@ const HomeScreen = () => {
           ))}
         </Row>
       )}
-    </div>
+    </>
   );
 };
 

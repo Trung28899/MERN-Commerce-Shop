@@ -182,6 +182,7 @@
         - See the actions following this order:
             ./client/src/constants/productConstants.js
             ./client/src/reducers/productReducers.js
+            ./client/src/store.js
             ./client/src/index.js
             ./client/src/actions/productActions.js
 
@@ -196,3 +197,13 @@
         - See files recommended in 9th Commit
         - See how to dispatch an action and accessing redux's state
              in ./client/src/screens/HomeScreen.js
+
+    11st Commit:
+        - Implement Redux for ProductScreen
+        - See Redux implementation in this order:
+            ./client/src/constants/productConstants.js
+            ./client/src/reducers/productReducers.js
+            ./client/src/store.js
+            ./client/src/actions/productActions.js
+        - See dispatch action and accessing redux state in:
+            ./client/src/screens/ProductScreen.js
