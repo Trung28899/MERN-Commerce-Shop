@@ -175,15 +175,24 @@
     8th Commit:
         - Setting up Redux store: (should follow exact commands,
             these are basic setup)
-        - See ./client/store.js and setup in ./client/index.js
+        - See ./client/src/store.js and setup in ./client/index.js
 
     9th Commit:
         - Setting up redux constant and actions
         - See the actions following this order:
             ./client/src/constants/productConstants.js
             ./client/src/reducers/productReducers.js
+            ./client/src/index.js
             ./client/src/actions/productActions.js
 
         - The action in productActions is not currently
             fire off yet, we just set it up in this commit
             > See next commit for how to fire it off
+
+    10th Commit:
+        - Dispatch a Redux Action to change state and accessing
+            application level's state
+        - Full cycle now complete
+        - See files recommended in 9th Commit
+        - See how to dispatch an action and accessing redux's state
+             in ./client/src/screens/HomeScreen.js
