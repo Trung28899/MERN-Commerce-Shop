@@ -87,7 +87,7 @@ const ProductScreen = ({ history, match }) => {
                   <ListGroup.Item>
                     <Row>
                       <Col>Qty</Col>
-                      <Col>
+                      <Col md="auto">
                         <Form.Control
                           as="select"
                           value={qty}

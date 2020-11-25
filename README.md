@@ -214,3 +214,31 @@
             +, search 'product.countInStock' for Quantity Select
             +, Search 'addToCartHandler' for Add To Cart Button
             > See the link after hit addToCartHandler() to see how it works
+
+    13rd Commit:
+        - Cart Functionality:
+            +, Add product to cart
+            +, Delete product from cart
+            +, Change amount of product in cart
+
+        - Description:
+            +, Add product to cart:
+                > In productScreen, when hit 'Add To Cart'
+                > Direct to a link that contain: productId and quantity
+                > CartScreen.js extract those data, dispatch an action to
+                    add product to cartItems (in Reducer)
+            +,  Delete product from cart
+                > CartScreen.js will call a function (removeFromCartHandler)
+                    that will dispatch an action to delete the product
+                    from cartItems (in Reducer)
+            +, Change amount of product in cart
+                > CartScreen.js will dispatch an addToCart() action that
+                    will automatically update the amount of the existing
+                    product in cartItems
+
+        - See the following scripts:
+            +, ./constants/cartConstants.js
+            +, ./reducer/cartReducers.js
+            +, ./actions/cartActions.js
+            +, ./screens/ProductScreen.js
+            +, ./screens/CartScreen.js
