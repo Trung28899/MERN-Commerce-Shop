@@ -121,13 +121,13 @@
         - No backend implemented
         - Section 2: Starting the Front End
 
-    3rd Commit
+    3rd Commit (Section 3)
         - Setting basic backend
         - See server.js in server folder
         - Run $ npm start > to start the server
         - Section 3: video 10 and 11
 
-    4th Commit
+    4th Commit: (Section 3)
         - Content:
             +, Fetching data from backend
             +, Setting up nodemon and concurrently,
@@ -138,7 +138,7 @@
         - Done Section 3
         (Wrong Commit title, but still applicable)
 
-    5th Commit:
+    5th Commit: (Section 4)
         - Setting up MongoDB:
             +, See database connection script in ./server/config/db.js
             +, See .env file for connection string
@@ -156,12 +156,12 @@
             +, $ npm run data:destroy
                 > destroying all data in database
 
-    6th Commit:
+    6th Commit: (Section 4)
         - Creating routes to send valid data back to front-end
         - Fetching data from database (in front-end)
         - See ./server/routes/productRoutes.js
 
-    7th Commit
+    7th Commit (Section 5)
         - Custom error handling:
             +, For not found route
             +, For invalid id in route /api/products/:id
@@ -172,12 +172,12 @@
             +, /api/products/:id with id is invalid value,
                 should also get back error json data
 
-    8th Commit:
+    8th Commit: (Section 5)
         - Setting up Redux store: (should follow exact commands,
             these are basic setup)
         - See ./client/src/store.js and setup in ./client/index.js
 
-    9th Commit:
+    9th Commit: (Section 5)
         - Setting up redux constant and actions
         - See the actions following this order:
             ./client/src/constants/productConstants.js
@@ -190,7 +190,7 @@
             fire off yet, we just set it up in this commit
             > See next commit for how to fire it off
 
-    10th Commit:
+    10th Commit: (Section 5)
         - Dispatch a Redux Action to change state and accessing
             application level's state
         - Full cycle now complete
@@ -198,7 +198,7 @@
         - See how to dispatch an action and accessing redux's state
              in ./client/src/screens/HomeScreen.js
 
-    11st Commit:
+    11st Commit: (Section 5)
         - Implement Redux for ProductScreen
         - See Redux implementation in this order:
             ./client/src/constants/productConstants.js
@@ -208,14 +208,14 @@
         - See dispatch action and accessing redux state in:
             ./client/src/screens/ProductScreen.js
 
-    12nd Commit:
+    12nd Commit: (Section 6)
         - Quantity Select (in Product Screen) & Add To Cart Button
         - See ./client/src/screens/ProductScreen:
             +, search 'product.countInStock' for Quantity Select
             +, Search 'addToCartHandler' for Add To Cart Button
             > See the link after hit addToCartHandler() to see how it works
 
-    13rd Commit:
+    13rd Commit: (Section 6)
         - Cart Functionality:
             +, Add product to cart
             +, Delete product from cart
@@ -242,3 +242,9 @@
             +, ./actions/cartActions.js
             +, ./screens/ProductScreen.js
             +, ./screens/CartScreen.js
+
+    14th Commit:
+        - Basic Authentication
+        - See ./server/server.js, look for '/api/users/login'
+        - See ./server/routes/userRoutes.js
+        - See ./server/controllers/userController.js
