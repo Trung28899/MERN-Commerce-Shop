@@ -207,3 +207,10 @@
             ./client/src/actions/productActions.js
         - See dispatch action and accessing redux state in:
             ./client/src/screens/ProductScreen.js
+
+    12nd Commit:
+        - Quantity Select (in Product Screen) & Add To Cart Button
+        - See ./client/src/screens/ProductScreen:
+            +, search 'product.countInStock' for Quantity Select
+            +, Search 'addToCartHandler' for Add To Cart Button
+            > See the link after hit addToCartHandler() to see how it works
