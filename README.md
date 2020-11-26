@@ -329,3 +329,10 @@
         - Show User in NavBar & Logout:
             > ./client/src/components/Header.js
             > ./client/src/actions/userAction.js
+
+    20th Commit (Section 8):
+        - User Register Reducer, Action & Screen:
+            > ./client/src/constants/userConstants.js
+            > ./client/src/reducers/userReducers.js
+            > ./client/src/actions/userActions.js
+            > ./client/src/screens/RegisterScreen.js
