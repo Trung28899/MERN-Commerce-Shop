@@ -40,6 +40,7 @@
 
         a. Package Name and Resources:
             - Nodemon: automatically restart server when there is a change in code
+
             - Concurrently:
                 +, allow us to run server and client in one command, also restart both server when there is a change
                 +, See "dev" in root package.json
@@ -56,6 +57,20 @@
                 +, Link:
                 https://www.npmjs.com/package/express-async-handler
 
+            - Json Web Token:
+                +, Link: https://jwt.io/
+                +, This package generate a token that allow app to authorize
+                    users correctly and securely
+                +, Here is how it works:
+                    > user login, JWT will generate a token to send it to the
+                        front-end
+                    > after user login, the front-end will send a GET request
+                        to get user's resource
+                    > when this happens, front-end will send back the JWT token
+                        to the back-end
+                    > Back-end now will validate this request to return
+                        user's resource (if token is valid) or return
+                        and error (if token is invalid)
 
         b. Package Installation:
             - $ npm install --save express
@@ -65,6 +80,7 @@
             - $ npm install --save colors
             - $ npm install --save bcryptjs
             - $ npm install --save express-async-handler
+            - $ npm install --save jsonwebtoken
 
     2. Other Backend Notes:
 
@@ -112,6 +128,19 @@
             that need it
 
         https://drive.google.com/file/d/1Wpzv2-e3ilt1QwTfG9fb3yxwn0wi2YtG/view?usp=sharing
+
+    4. Authentication and Authorization:
+
+        - Authentication: is the process of differentiating users and securely
+            determine which user is using the application.
+
+            Example: The process of login is the process of Authentication
+
+        - Authorization: is the process of securly providing permission of certain
+            resources to authenticated user
+
+            Example: The process of getting user resources after logged in is the process of
+                Authentication
 
 ## IV. Commit Notes:
 
@@ -243,8 +272,30 @@
             +, ./screens/ProductScreen.js
             +, ./screens/CartScreen.js
 
-    14th Commit:
+    14th Commit: (Section 7)
         - Basic Authentication
         - See ./server/server.js, look for '/api/users/login'
         - See ./server/routes/userRoutes.js
         - See ./server/controllers/userController.js
+
+    15th Commit: (Section 7)
+        - Authorization process with the help of JWT (Json Web Token)
+        - Read about: (4. Authentication and Authorization:) above
+        - Read about: (- Json Web Token:) above
+
+        - Code instruction:
+            +, ./server/utils/generateToken.js: util function to generate
+                an JWT
+            +, ./server/server.js and ./server/routes/userRoutes.js to see routes
+                configs
+            +, When user send a POST request to '/api/users/login':
+                > ./server/controllers/userController.js, authUser() will generate the
+                    token to send to front-end
+            +, After user login and get back the data (with JWT token), front-end
+                will send a GET request with the token to backend ('/api/user/profile') to be
+                authorized for user's resource
+            +, When backend receive a GET request to ('/api/user/profile'):
+                > See ./server/routes/userRoutes.js
+                > 'protect' middleware in './server/middleware/authMiddleware.js' will be run first
+                > then 'getUserProfile' in ./server/controllers/userController.js will be run next
+                > both of these middleware will determine the response of the server to front-end
