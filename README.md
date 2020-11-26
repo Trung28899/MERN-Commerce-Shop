@@ -313,3 +313,14 @@
             > ./client/src/constants/userConstants.js
             > ./client/src/reducers/userReducers.js
             > ./client/src/store.js
+
+    18th Commit (Section 8):
+        - Implementing login screen:
+            > Now able to login, display error if
+                invalid email or password
+            > Even if we reload page, user still logged in
+                because the information is stored in local
+                storage (in the browser)
+        - For more details, see follow scripts:
+            +, ./client/src/components/FormContainer.js
+            +, ./client/src/screens/LoginScreen.js
