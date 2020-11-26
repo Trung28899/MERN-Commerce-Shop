@@ -324,3 +324,8 @@
         - For more details, see follow scripts:
             +, ./client/src/components/FormContainer.js
             +, ./client/src/screens/LoginScreen.js
+
+    19th Commit (Section 8):
+        - Show User in NavBar & Logout:
+            > ./client/src/components/Header.js
+            > ./client/src/actions/userAction.js
