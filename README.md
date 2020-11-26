@@ -301,9 +301,15 @@
                 > both of these middleware will determine the response of the server to front-end
 
     16th Commit: (Section 7 - end)
-        - User Registration and Password Encryption:
+        - User Registration and Password Encryption (Backend):
             +, Password Encryption:
                 > See ./server/models/userModel under 'userSchema.pre'
             +, User Registration:
                 > See ./server/controllers/userController under 'registerUser'
                 > See ./server/routes/userRoutes.js
+
+    17th Commit: (Section 8)
+        - Setting up redux for user application level's state, See:
+            > ./client/src/constants/userConstants.js
+            > ./client/src/reducers/userReducers.js
+            > ./client/src/store.js
