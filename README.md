@@ -299,3 +299,11 @@
                 > 'protect' middleware in './server/middleware/authMiddleware.js' will be run first
                 > then 'getUserProfile' in ./server/controllers/userController.js will be run next
                 > both of these middleware will determine the response of the server to front-end
+
+    16th Commit: (Section 7 - end)
+        - User Registration and Password Encryption:
+            +, Password Encryption:
+                > See ./server/models/userModel under 'userSchema.pre'
+            +, User Registration:
+                > See ./server/controllers/userController under 'registerUser'
+                > See ./server/routes/userRoutes.js
