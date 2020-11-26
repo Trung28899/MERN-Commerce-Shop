@@ -4,6 +4,20 @@
     - Back-end: $ npm run client (in root dir)
     - Both at the same time: $ npm run dev (in root dir)
 
+## Notable Bugs:
+
+    - Name in NavBar didn't change when update
+        +, in /profile: after update name,
+            updated name got send to backend, howevers,
+            navbar doesn't display the updated name
+        +, After update name, logout and log back in,
+            the name in the text box is not the updated name
+        > fixed in 21st commit, but might happen again
+
+    - When add to cart a new product (with default quantity)
+        > the product in cart wasn't count until we change the
+            amount
+
 ## I. Front-end Explanation:
 
     1. Packages Used:
@@ -336,3 +350,15 @@
             > ./client/src/reducers/userReducers.js
             > ./client/src/actions/userActions.js
             > ./client/src/screens/RegisterScreen.js
+
+    21st Commit (Section 8):
+        - User Profile Update (backend):
+            > ./server/routes/userRoutes.js
+            > ./server/controllers/userController.js
+
+        - User Profile Update (frontend):
+            > userConstants.js
+            > userReducers.js
+            > store.js
+            > userAction.js
+            > ProfileScreen.js

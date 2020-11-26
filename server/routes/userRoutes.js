@@ -2,18 +2,17 @@ import express from "express";
 const router = express.Router();
 import {
   authUser,
-  getUserProfile,
   registerUser,
+  getUserProfile,
+  updateUserProfile,
 } from "../controllers/userController.js";
 import { protect } from "../middleware/authMiddleware.js";
 
 router.route("/").post(registerUser);
 router.post("/login", authUser);
-/*
-    When user send a GET request to /api/users/profile, 
-    backend will run script of 'protect' middleware first
-    then move on the the 'getUserProfile' middleware
-*/
-router.route("/profile").get(protect, getUserProfile);
+router
+  .route("/profile")
+  .get(protect, getUserProfile)
+  .put(protect, updateUserProfile);
 
 export default router;
