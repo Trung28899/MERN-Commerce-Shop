@@ -371,3 +371,13 @@
             > store.js
             > cartActions.js
             > ShippingScreen.js
+
+    23rd Commit (Section 9):
+        - Payment screen & checkout steps
+        - See files:
+            > ./clients/src/components/CheckoutSteps.js
+            > cartConstants.js
+            > cartReducers.js
+            > store.js
+            > cartActions.js
+            > ./clients/src/screens/PaymentScreen.js
