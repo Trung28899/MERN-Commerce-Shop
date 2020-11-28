@@ -362,3 +362,12 @@
             > store.js
             > userAction.js
             > ProfileScreen.js
+
+    22nd Commit (Section 9:
+        - Creating Shipping Address & Save address to Redux
+        - See files:
+            > cartConstants.js
+            > cartReducers.js
+            > store.js
+            > cartActions.js
+            > ShippingScreen.js
