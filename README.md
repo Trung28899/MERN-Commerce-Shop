@@ -384,7 +384,9 @@
 
     24th Commit (Section 9):
         - Place order scren front end
+            (viewing an order that has been ordered)
         - Create order front end and back end
+            (returning order from backend)
 
         - Create Order Backend:
             > ./server/routes/orderRoutes.js
@@ -411,3 +413,16 @@
             > stores.js
             > App.js
             > OrderScreen.js
+
+    26th Commit (Section 10):
+        - Update To Paid Backend
+            (update order when the order is paid)
+         - Order Pay Reducer & Action
+        - Backend:
+            > orderController.js
+            > orderRoutes.js
+        - Frontend:
+            > orderConstants.js
+            > orderReducers.js
+            > orderActions.js
+            > stores.js
