@@ -441,3 +441,19 @@
         - See .env variable for PAYPAL in backend
         - Code:
             > ./client/src/screens/OrderScreen.js
+
+    28th Commit (Section 10):
+        - Show Orders On Profile
+        - Order Reset (When logout, reset all the order details)
+        - Backend:
+            > orderController.js
+        - Frontend:
+            > orderConstants.js
+            > orderReducers.js
+            > orderActions.js
+            > stores.js
+            > ProfileScreen.js
+
+            > userConstants.js
+            > userReducer.js
+            > userActions.js
