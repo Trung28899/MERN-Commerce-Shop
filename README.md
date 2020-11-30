@@ -398,3 +398,16 @@
             > store.js
             > orderActions.js
             > ./client/src/screens/PlaceOrderScreen.js
+
+    25th Commit (Section 10):
+        - Get order details front end and back end:
+        - Backend:
+            > ./server/controllers/orderController.js
+            > ./server/routes/orderRoutes.js
+        - Frontend:
+            > orderConstants.js
+            > orderReducers.js
+            > orderActions.js
+            > stores.js
+            > App.js
+            > OrderScreen.js
