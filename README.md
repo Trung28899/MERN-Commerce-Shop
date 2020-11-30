@@ -381,3 +381,20 @@
             > store.js
             > cartActions.js
             > ./clients/src/screens/PaymentScreen.js
+
+    24th Commit (Section 9):
+        - Place order scren front end
+        - Create order front end and back end
+
+        - Create Order Backend:
+            > ./server/routes/orderRoutes.js
+            > ./server/controllers/orderControllers.js
+            > ./server/server.js
+
+        - Create Order Front-end:
+            > ./client/src/App.js
+            > orderConstants.js
+            > orderReducers.js
+            > store.js
+            > orderActions.js
+            > ./client/src/screens/PlaceOrderScreen.js
