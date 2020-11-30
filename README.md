@@ -40,6 +40,9 @@
             - redux-devtools-extension:
                 +, Allow us to access redux dev tool on the browser
                 +, Without this, the redux dev tool won't recognize
+            - Paypal docs:
+                +, https://developer.paypal.com/docs/checkout/reference/customize-sdk/
+                +, https://www.npmjs.com/package/react-paypal-button-v2
 
         b. Packages Installation:
             - $ npm install --save react-bootstrap
@@ -47,6 +50,7 @@
             - $ npm install --save axios
             - $ npm install --save redux react-redux redux-thunk
             - $ npm install --save redux-devtools-extension
+            - $ npm install --save react-paypal-button-v2
 
 ## II. Back-end Explanation:
 
@@ -426,3 +430,14 @@
             > orderReducers.js
             > orderActions.js
             > stores.js
+
+    27th Commit (Section 10):
+        - Implement Paypal buttons for order:
+            > OrderScreen.js
+        (Don't really understand this part, need to learn more)
+        - Resources:
+            > Paypal developer account trevortrinh28899
+            > react-paypal-button-v2 (package in frontend)
+        - See .env variable for PAYPAL in backend
+        - Code:
+            > ./client/src/screens/OrderScreen.js
