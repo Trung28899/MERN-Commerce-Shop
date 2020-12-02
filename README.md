@@ -518,3 +518,15 @@
             > productConstants.js > productReducers.js > store.js > productActions.js
             > ProductListScreen.js
                 > now admin can delete any product
+
+    34th Commit (Section 12):
+        - Create & Update Product
+            (When admin hit create product > will create a dummy product
+                then admin can update that product with new information)
+        - Backend:
+            > productController.js (createProduct() and updateProduct())
+            > productRoutes.js
+        - Frontend:
+            > productConstants.js > productReducers.js > store.js
+            > productActions.js > ProductListScreen.js (for creating products)
+            > ProductEditScreen.js (for editting products)
