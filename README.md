@@ -476,7 +476,7 @@
             > UserListScreen.js
             > App.js
 
-    30th Commit:
+    30th Commit (Section 11)
         - Admin Screen Access Security:
             +, not admin user > try to hit '/admin/userlist'
                 > redirect to '/login' route
@@ -484,3 +484,15 @@
         - Frontend:
             > See logout in userAction.js
             > See useEffect() in UserListScreen.js
+
+    31st Commit (Section 11):
+        - Remove Users
+            (Admin only)
+        - Backend:
+            > userRoutes.js
+            > userController.js, under deleteUser()
+        - Frontend:
+            +, Redux: userConstants.js > userReducers.js > store.js
+            > userActions.js
+            +, UserListScreen.js
+                > now can login as admin and delete user
