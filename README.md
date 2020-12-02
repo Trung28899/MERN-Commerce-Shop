@@ -457,3 +457,19 @@
             > userConstants.js
             > userReducer.js
             > userActions.js
+
+    29th Commit (Section 11)
+        - Admin User List (Frontend and Backend)
+            (Getting all user information for admin user)
+        - Backend:
+            > userRoutes.js, get route for '/'
+            > ./server/middleware/authMiddleware.js, used both function
+            > userController.js, under getUsers()
+        - Frontend:
+            > userConstants.js
+            > userReducers.js
+            > userAction.js
+            > store.js
+            > /components/Header.js
+            > UserListScreen.js
+            > App.js
