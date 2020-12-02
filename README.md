@@ -461,6 +461,8 @@
     29th Commit (Section 11)
         - Admin User List (Frontend and Backend)
             (Getting all user information for admin user)
+        - Login as admin > will see users option in drop down
+            > hit it and will see all user in the system
         - Backend:
             > userRoutes.js, get route for '/'
             > ./server/middleware/authMiddleware.js, used both function
@@ -473,3 +475,12 @@
             > /components/Header.js
             > UserListScreen.js
             > App.js
+
+    30th Commit:
+        - Admin Screen Access Security:
+            +, not admin user > try to hit '/admin/userlist'
+                > redirect to '/login' route
+            +, admin user after logout, reset data in '/admin/userlist'
+        - Frontend:
+            > See logout in userAction.js
+            > See useEffect() in UserListScreen.js
