@@ -497,7 +497,7 @@
             +, UserListScreen.js
                 > now can login as admin and delete user
 
-    32nd Commit (Section 11):
+    32nd Commit (Section 11 end):
         - Get user and update user by ID
             (Admin only)
         - Backend:
@@ -508,3 +508,13 @@
             > userActions.js
             +, UserListScreen.js
                 > now can login as admin and update user information
+
+    33rd Commit (Section 12):
+        - Delete Product by ID
+            (Admin only)
+        - Backend:
+            > productControllers.js > productRoutes.js
+        - Front-end:
+            > productConstants.js > productReducers.js > store.js > productActions.js
+            > ProductListScreen.js
+                > now admin can delete any product
