@@ -90,6 +90,9 @@
                         user's resource (if token is valid) or return
                         and error (if token is invalid)
 
+            - Multer: a node.js middleware for handling multipart/form-data, which is primarily used for uploading files.
+                +, https://www.npmjs.com/package/multer
+
         b. Package Installation:
             - $ npm install --save express
             - $ npm install -D nodemon concurrently
@@ -99,6 +102,7 @@
             - $ npm install --save bcryptjs
             - $ npm install --save express-async-handler
             - $ npm install --save jsonwebtoken
+            - $ npm install --save multer
 
     2. Other Backend Notes:
 
@@ -530,3 +534,12 @@
             > productConstants.js > productReducers.js > store.js
             > productActions.js > ProductListScreen.js (for creating products)
             > ProductEditScreen.js (for editting products)
+
+    35th Commit (Section 12):
+        - Uploading image from local machine
+            (Being able to select and upload image
+            from local machine and store it in mongodb)
+        - Backend:
+            > uploadRoutes.js > server.js
+        - Frontend:
+            > ProductEditScreen.js
