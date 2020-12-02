@@ -486,7 +486,7 @@
             > See useEffect() in UserListScreen.js
 
     31st Commit (Section 11):
-        - Remove Users
+        - Remove Users by ID
             (Admin only)
         - Backend:
             > userRoutes.js
@@ -496,3 +496,15 @@
             > userActions.js
             +, UserListScreen.js
                 > now can login as admin and delete user
+
+    32nd Commit (Section 11):
+        - Get user and update user by ID
+            (Admin only)
+        - Backend:
+            > userRoutes.js > userController.js, under
+                getUserById() and updateUser()
+        - Frontend:
+            +, Redux: userConstants.js > userReducers.js > store.js
+            > userActions.js
+            +, UserListScreen.js
+                > now can login as admin and update user information
