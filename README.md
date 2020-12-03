@@ -543,3 +543,12 @@
             > uploadRoutes.js > server.js
         - Frontend:
             > ProductEditScreen.js
+
+    36th Commit (Section 12 - end)
+        - Admin Order List
+            (all Order viewable by admin)
+        - Mark Order as Delivered
+        - Backend:  > orderController.js > orderRoutes.js
+        - Frontend:
+            > orderConstants.js > orderReducer.js > store.js
+            > orderActions.js > OrderListScreen.js
