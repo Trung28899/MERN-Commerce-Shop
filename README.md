@@ -549,7 +549,7 @@
             > ProductEditScreen.js
 
     36th Commit (Section 12 - end)
-        - Admin Order List
+        - Admin Order List, Implemented morgan (stopped it in commit 38th)
             (all Order viewable by admin)
         - Mark Order as Delivered
         - Backend:  > orderController.js > orderRoutes.js
@@ -560,8 +560,6 @@
             (OrderScreen.js is valid only in 37th Commit)
 
     37th Commit (Section 13):
-        - More Functionality:
-            +, Create product review
         - Create product review:
             +, Frontend:
                 > productConstants.js > productReducers.js > store.js
@@ -569,3 +567,12 @@
             +, Backend:
                 > productController.js (createProductReview())
                 > productRoutes.js
+
+    38th Commit (Section 13):
+        - Search products functionality
+        - Frontend:
+            > /components.SearchBox.js > App.js
+            > Header.js > productActions.js
+            (in listProducts()) > HomeScreen.js
+        - Backend:
+            > productController.js, under getProducts()
