@@ -576,3 +576,16 @@
             (in listProducts()) > HomeScreen.js
         - Backend:
             > productController.js, under getProducts()
+
+    39th Commit (Section 13):
+        - Pagination
+            (For listing product in homescreen and admin product listing screen)
+        - Backend:
+            > productController.js
+            (in getProducts())
+        - Frontend:
+            > productReducers.js (in productListReducer)
+            > productActions.js (in listProducts())
+            > components/Paginate.js
+            > HomeScreen.js
+            > ProductListScreen.js
